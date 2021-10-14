@@ -1,0 +1,25 @@
+<form action="#" method="post" target="_blank">
+    <table>
+        <tr>
+            <th><label for="fecha">Fecha agendada</label></th>
+            <th><output>Fecha(codigo js)</output></th>
+        </tr>
+        <tr>
+            <th><label for="hora">Hora de la cita</label></th>
+            <th><output>Hora(codigo js)</output></th>
+        </tr>
+        <tr>
+            <th><label for="problema">Razón de mantenimiento</label></th>
+            <th><output>Problema(codigo js)</output></th>
+        </tr>
+    </table>
+    <br>
+    <label for="cambioDeEstado">Favor seleccione el nuevo estado del mantenimiento</label>
+    <select name="listaEstado" id="estado">
+        <option value="0">En Mantenimiento</option>
+        <option value="1">Mantenimiento finalizado</option>
+        <option value="2">Mantenimiento no completado</option>
+    </select>
+    <br>
+    <input type="submit" value="Actualizar">
+</form>

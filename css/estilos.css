@@ -1,0 +1,170 @@
+/*ul{
+    list-style-type: none;
+    
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+   
+    font-kerning:normal ; letter-spacing: 0.6pt;
+}
+
+li{
+    float: left;
+    background-color: #3366CC;
+    
+    
+    
+}
+li a{
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 13px;
+    text-decoration: none;
+    
+    
+}
+
+li a:hover{
+    
+    background-color: #CCD3D9; font-weight: bold; 
+    color:#003399 ;
+    padding: 13px 9px;
+    
+}*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+
+body{
+    font-family: 'Yaldevi', sans-serif !important;
+    overflow-x: hidden !important;
+    
+}
+
+body > header{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.7pt;
+}
+
+.navbar-toggler > p{
+    font-size: 7pt;
+}
+
+
+#header{
+    margin-top: 100px;
+}
+
+#menu{
+    background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+#menu li > a {
+    font-size: 18px;
+    color: black;
+}
+#menu  button {
+    font-size: 18px;
+    font-weight: bold;
+    border-width: 0px;
+    
+}
+#creacuenta{
+    border-color: black;
+    border-width: 1px;
+    color:black;
+    
+}
+#creacuenta:hover{
+    background-color: #0d6efd;
+    color:white; font-weight: bold;
+    border: none;
+}
+#iniciousuario{
+    background-color: #0d6efd;
+    color:white; font-weight: bold;
+    border: none;
+}    
+#iniciousuario:hover{
+    background-color: #dc3545;
+    color:white; font-weight: bold;
+    border: none;
+}    
+    
+div > a {
+    letter-spacing: 0.5pt;
+    font-weight: bold;
+}
+
+div > a:hover {
+    letter-spacing: 0.5pt;
+    font-weight: bold;
+}
+
+#offcanvasNavbar{
+background-color:rgba(225, 226, 226, 0.8);
+
+
+color: #000000;
+}
+
+div.list-group {
+    padding-right: 0px !important;
+    }
+
+.dropdown-menu {
+background-color:hsla(152, 69%, 31%, 0.7) !important;
+color: #000000  !important;
+text-align:left 15px !important; 
+}
+
+.dropdown-item {
+
+color: #000  !important;
+ 
+}
+#offcanvasNavbarDropdown {
+
+color: #000  !important;
+ 
+}
+
+.carousel{
+   max-height: 55rem;
+   max-width: 55rem;
+   top: 5px;
+   
+}
+
+/* #divreparar{
+    justify-content: center !important;
+    
+}
+
+#divcomprar{
+    justify-content: center !important;
+}
+
+#divindumentaria{  
+    justify-content: center !important;
+} */
+
+/* media Queries Pantalla */
+/* Ancha */
+
+
+/* media Queries Pantalla */
+/* SM */
+@media (max-width:768px){
+    #intro{
+        width: 90% !important; 
+    }
+}
+
+/*  */

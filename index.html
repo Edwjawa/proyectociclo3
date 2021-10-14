@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--El idioma es español-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma para agendar mantenimientos de bicicletas en Technical Service Daniel Bikers">
+    <meta name="keywords" content="Mantenimiento,Bicicletas,servicio tecnico,bike">
+    <title>Thecnical Service Daniel Bikers</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+   
+</head>
+<body>
+
+  
+ <!-- Option 1: Bootstrap Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+    <!--==============================================-->
+    <!--ENCABEZADO  modificar paleta de colores y cambiar nombre de empresa por icono de la empresa-->
+    <!--==============================================-->
+
+       <!--el llamado del navegador como un formulario es poco comodo -->
+       <!--  <iframe src="../layout/navegacion.html" frameborder="0" width="100%" height="100px" ></iframe>
+        <div>
+        Favor subir los archivos
+       <iframe src="../pages/paginaPrincipal.html" frameborder="0" width="100%" height="100px"></iframe> 
+ 
+        </div>--> 
+  <header class="container-fluid bg-secondary bg-gradient d-flex justify-content-center" id="header"> 
+    <div>
+      <h1 class="text-light mb-0 p-2 text-center"> Thecnical Service Daniel Bikers</h1>
+      <p class="text-light mb-0 p-2 text-center">contactanos (+57) 311 292 55 51</p>
+    </div>      
+  </header> 
+  <div class="fixed-top p-30">
+<!-- 
+    <iframe src="../layout/navegacion.html" frameborder="0" width="100%" height="100px " ></iframe>
+   -->
+  <nav class="navbar navbar-light p-10" id="menu">
+    <div class="container container-fluid">
+      <button class="navbar-toggler d-inline-block align-text-top" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+         <img src="/imagenes/html5.png" alt="logo de TSDB" width="45">
+         <p>MENU</p>
+      </button>
+      
+      <div class="d-grid gap-2 d-md-flex justify-content-end"> 
+        <a class="btn fw-bold" href="../pages/inicioSesionUsuario.html" role="button" id="iniciousuario">Inicia Sesión</a>
+        <a class="btn " href="../pages/registroUsuario.html" role="button" id="creacuenta">Crea tu Cuenta</a>
+      </div>
+    </div>
+            
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header" >
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bienvenido</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3" id=navsinoffcanvas>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Equipo Técnico </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="../pages/inicioSesionTecnico.html">Inicia Sesión</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../pages/registroTecnico.html">Crea tu Cuenta</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Agenda </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="../pages/inicioSesionTecnico.html">elementos de agenda</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../pages/registroTecnico.html">elementos de agenda</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="../pages/inicioSesionTecnico.html">poner servicios</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../pages/registroTecnico.html">poner servicios</a></li>
+            </ul>
+          </li>
+            <!--
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contáctanos</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Equipo
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Inicia Sesión</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Crea tu Cuenta</a></li>
+            </ul>
+          </li>
+                        <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>-->
+        </ul>
+          
+      </div>
+    </div>
+  </nav>
+  </div>
+
+    <!--==============================================-->
+    <!--Carrusel de imagenes-->
+    <!--==============================================-->
+  
+  <div clas="row">
+    <div id="carouseldeimagenes" class="carousel slide container-fluid" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouseldeimagenes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouseldeimagenes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouseldeimagenes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="./imagenes/bicycle-g29c54946a_1920.jpg" class="d-block w-100" alt="sillines bici">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000"> 
+            <img src="./imagenes/brakes-g6a63a0fba_1920.jpg" class="d-block w-100" alt="trnasmision">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./imagenes/gears-g4abcb8ddc_1920.jpg" class="d-block w-100" alt="piñones">
+          </div>
+        </div>
+     <!--    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+    </div>
+    </div>
+    
+    <!--==============================================-->
+    <!--Intro-->
+    <!--==============================================-->
+  
+    <div class="row">
+      <section class="w-50 mx-auto text-center pt-5" id="intro"><h1 class="p-3 fs-3 border-top border-3 ">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+        <span class="text-primary">What is Lorem Ipsum?</span></h1>
+      <p class="p-3 fs-4"><span class="text-primary">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry.</p>     
+      </section>
+    </div>
+
+    <!--==============================================-->
+    <!--Servicios-->
+    <!--==============================================-->
+
+    <section class="Container-fluid pt-4 bg-secondary">
+      <div class="row w-75 mx-auto justify-content-center">
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="d-grid gap-1 justify-content-center">
+          <button type="button" class="btn btn-danger rounded-pill" id="divreparar">
+          
+          <img src="./imagenes/reparar.png" alt="reparacion" width="50">
+          </button>
+        </div>
+        <div>
+            <h3 class="text-center text-light fw-bold">REPARAR</h3>
+          
+          </div>
+        </div>
+          
+          
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="divcomprar">
+          <div class="d-grid gap-1 justify-content-center">
+          <button type="button" class="btn btn-primary rounded-pill">
+            <img src="./imagenes/bicicleta.png" alt="vender bici" width="50">
+          </button>
+          </div>
+          <div>
+            <h3 class="text-center text-light fw-bold">COMPRAR</h3>
+          </div>
+        </div>
+          
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="divindumentaria">
+          <div class="d-grid gap-1 justify-content-center">          
+          <button type="button" class="btn btn-success rounded-pill" id="botonindumentaria"> 
+          <img src="./imagenes/casco.png" alt="casco" width="50">
+          </button>
+          </div>
+          <div>
+            <h3 class="text-center text-light fw-bold">INDUMENTARIA</h3>
+          </div>
+        </div>
+         
+        
+      </div>
+    </section>
+
+    
+  
+
+    <!--==============================================-->
+    <!--Mapa-->
+    <!--==============================================-->
+  
+    
+
+    <!--==============================================-->
+    <!--Tecnicos-->
+    <!--==============================================-->
+  
+    <section class="Container-fluid pt-5">
+      <div class="" id="">
+        <div class="row w-75 mx-auto justify-content-center">
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border-end border-primary">
+            <div class="card mx-auto border-danger" style="width: 18rem;">
+              <img src="./imagenes/html5.png " class="card-img-top w-50 rounded mx-auto d-block" alt="foto técnico">
+              <div class="card-body">
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+              </div>
+            </div>
+          <!-- <div class="d-grid gap-1 justify-content-center">
+            <button type="button" class="btn btn-danger mt-" id="divreparar">
+            
+            <img src="./imagenes/reparar.png" alt="reparacion" width="50">
+            </button>
+          </div>
+          <div>
+              <h3 class="text-center fw-bold">REPARAR</h3>
+            
+            </div> -->
+          </div>
+            
+            
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 d-flex align-content-around flex-wrap">
+            <div class="row mx-auto justify-content-between">
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="divcomprar">
+            <div class="d-grid gap-1 justify-content-center">
+            <button type="button" class="btn btn-primary rounded-circle">
+              <img src="./imagenes/bicicleta.png" alt="vender bici" width="50">
+            </button>
+            </div>
+            <div class="d-grid gap-1 justify-content-center">
+              <h3 class="text-center fw-bold fs-3">VENTAS</h3>
+            </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="divcomprar">
+            <div class="d-grid gap-1 justify-content-center">
+            <button type="button" class="btn btn-success rounded-circle">
+              <img src="./imagenes/bicicleta.png" alt="vender bici" width="50">
+            </button>
+            </div>
+            <div class="d-grid gap-1 justify-content-center">
+              <h3 class="fw-bold fs-3">TÉCNICO</h3>
+            </div>
+            </div>
+            </div>
+          
+
+            <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="divcomprar"> -->
+            <div class="row mx-auto justify-content-between">
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="divcomprar">
+            <div class="d-grid gap-1 justify-content-center">
+            <button type="button" class="btn btn-secondary rounded-circle">
+              <img src="./imagenes/bicicleta.png" alt="vender bici" width="50">
+            </button>
+            </div>
+            <div class="d-grid gap-1 justify-content-center">
+              <h3 class="fw-bold fs-3">VENTAS</h3>
+            </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="divcomprar">
+            <div class="d-grid gap-1 justify-content-center">
+            <button type="button" class="btn btn-danger rounded-circle">
+              <img src="./imagenes/bicicleta.png" alt="vender bici" width="50">
+            </button>
+            </div>
+            <div class="d-grid gap-1 justify-content-center">
+              <h3 class="fw-bold fs-3">TÉCNICO</h3>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+           
+          
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+      
+     
+
+
+
+    </div>
+</body>
+</html>
